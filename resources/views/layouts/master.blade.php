@@ -28,8 +28,6 @@
                 @yield('content')
             </div>
         </div>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5XV02LEsTEc8i8b63AeY2a4odYQfrdDw&callback=initMap"
-        async defer></script>
         @yield('isolatedScripts')
     </body>
 </html>
