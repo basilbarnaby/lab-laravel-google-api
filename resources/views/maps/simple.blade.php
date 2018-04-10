@@ -1,12 +1,11 @@
 @extends('layouts.maps')
 
 @section('content')
-    <form>
+    <form @submit.prevent="locateAddress">
         <input type="text" name="" id="" v-model="address" placeholder="Enter an address">
         <button type="submit">Geolocate</button>
     </form>
     <div id="map"></div>
-    <pre v-text="address"></pre>
 @endsection
 
 @section('isolatedScripts')
